@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="politicsApp">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Politics</title>
+        <script src="/javascripts/angular.min.js"></script>
+        <script src="/javascripts/angular-route.min.js"></script>
+        <script src="/javascripts/client.js"></script>
+        <script src="/javascripts/AboutController.js"></script>
+        <script src="/javascripts/JobsController.js"></script>
+        <script src="/javascripts/RankController.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <base href= "/">
+    </head>
+
+    <body>
+
+    <div class="jumbotron">
+
+        <h1>Politician Server</h1>
+
+        <ul class="nav">
+            <li><a href="/about">About</a></li>
+            <li><a href="/jobs" >Jobs </a></li>
+            <li><a href="/rank" >Rank </a></li>
+        </ul>
+
+    </div>
+
+        <div id="main">
+
+        <h2>The Donald</h2>
+
+            <ng-view>
+
+            </ng-view>
+        </div>
+
+    </body>
+</html>
